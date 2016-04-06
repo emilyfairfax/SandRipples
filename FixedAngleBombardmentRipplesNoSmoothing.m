@@ -153,11 +153,11 @@ for i = 2:N %loop thru total number of shots
     plot(x,shotplot32,'--','Color',[.859,.82,.702])
     
     %Fill Sand Elevation
-    yy = [bottomline, fliplr(smoothsand)];
+    yy = [bottomline, fliplr(sand_elevation)];
     fill(xx,yy,[.796, .737, .565]);
     
     %Sand Elevation Line
-    plot(x,smoothsand,'k','Linewidth',3)
+    plot(x,sand_elevation,'k','Linewidth',3)
     %plot formatting
     title('Sand Profile Evolution with Fixed Angle Particle Bombardment');
     xlabel('Distance Along Profile (grains)');
